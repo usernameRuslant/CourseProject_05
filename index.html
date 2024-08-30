@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/1eb673fbc5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/slick.css" />
+  </head>
+  <body>
+    <!-- 1.1создаем шапку -->
+    <header>
+      <span class="logo">Washoo</span>
+      <div class="nav">
+        <a href="#">Главная</a>
+        <a href="#">Про компанию</a>
+        <a href="#">Услуги</a>
+      </div>
+      <!-- по факту это будет кнопка при нажатии на которую у нас будет открыватся меню ,которое будет выезжать справа на сайте , также добавим id так как мы будем выбирать нужный нам обьект по идентификатору то у нас будет выезжать меню  -->
+      <span class="menu" id="show-menu"
+        ><i class="fa-sharp fa-solid fa-bars"></i>
+      </span>
+    </header>
+    <!-- кнопка меню -->
+    <div id="hidden-menu">
+      <span class="close"><i class="fa-solid fa-xmark"></i></span>
+      <h2>Меню</h2>
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Главная</a></li>
+      </ul>
+    </div>
+    <!-- section 1 -->
+    <section class="full-page">
+      <h1>Washoo - удобный сервис для всех и каждого</h1>
+      <h3>Быстрый, легкий, удобный, инновационный</h3>
+      <button>Узнай больше <i class="fa-solid fa-arrow-right"></i></button>
+    </section>
+    <!-- section 2 -->
+    <section class="features">
+      <div>
+        <img src="img/fast-icon.png" alt="" />
+        <h4>Быстрый</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+          recusandae?
+        </p>
+      </div>
+      <div>
+        <img src="img/light-icon.png" alt="" />
+        <h4>Легкий</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+          recusandae?
+        </p>
+      </div>
+      <div>
+        <img src="img/cool-icon.png" alt="" />
+        <h4>Удобный</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+          recusandae?
+        </p>
+      </div>
+    </section>
+    <!-- карусель -->
+    <section class="gallery">
+      <h2>Немного фотографий</h2>
+      <div id="slider">
+        <div>
+          <img
+            src="https://st4.depositphotos.com/2572561/28780/i/450/depositphotos_287804062-stock-photo-shot-of-a-asian-it.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://eimg.pravda.com/images/doc/a/5/a5067b4-it-spetsialist-head-1024x722.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://vigolex.net/wp-content/uploads/2021/05/internet-scaled.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://tl.kyiv.ua/wp-content/uploads/2019/05/informaczijni-tekhnologiyi.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- section 3 -->
+    <section class="bg-fixed">
+      <h3>Форма подписки</h3>
+      <input type="email" placeholder="Ваша почта" />
+      <button>Подписаться <i class="fa-solid fa-arrow-right"></i></button>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="up-btn">
+        <i class="fa-solid fa-arrow-up"></i>
+      </div>
+      <p>Все права защищены &copy;</p>
+      <div class="social">
+        <div><i class="fa-brands fa-youtube"></i></div>
+        <div><i class="fa-brands fa-facebook-f"></i></div>
+        <div><i class="fa-brands fa-twitter"></i></div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/slick.min.js"></script>
+  </body>
+</html>
